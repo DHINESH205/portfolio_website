@@ -322,79 +322,81 @@ profile-photo .img{
 
 
 /*---------------------------Projects---------------------------*/
-.project-content{
-  padding: 90px 0;
-  /* color:#fff;  */
+/* Section Padding */
+.project-content {
+  padding: 80px 20px;
+  background-color: #121212;
 }
-.project-title{
-  margin-bottom: 60px;
+
+/* Section Title */
+.project-title {
   text-align: center;
+  margin-bottom: 50px;
 }
-.project-title h4{
+.project-title h4 {
+  font-size: 36px;
   text-transform: uppercase;
-  font-size: 40px;
-  line-height: 40px;
   color: #fed700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.project-title p{
-  color: #e5e5e5;
+.project-title p {
+  color: #ccc;
+  font-size: 16px;
 }
-/* .projects{
-  display: flex;
-  justify-content:space-between;
-  flex-wrap: wrap;
-} */
+
+/* Grid Layout */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px; /* Control spacing between cards */
+  gap: 25px;
 }
 
-/* .project{
-    /* padding: 30px 15px; */
-    color: #e5e5e5;
-    border: 2px solid #e5e5e5;
-    border-radius: 10px;
-    width: 100%;
-    position: relative;
-    padding: 25px;
-    text-align: center;
-    flex-basis: 32%;
-    transition: .3s;
-} */
+/* Individual Project Card */
 .project {
-  color: #e5e5e5;
+  background-color: #1f1f1f;
   border: 2px solid #e5e5e5;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 25px;
   text-align: center;
-  transition: 0.3s;
-  height: 100%; /* Make all cards equal height */
+  color: #e5e5e5;
+  transition: border-color 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
-.project i{
+.project:hover {
+  border-color: #fed700;
+}
+
+/* Icon Styling */
+.project i {
   background-color: #fed700;
+  color: #333;
+  font-size: 24px;
   width: 60px;
   height: 60px;
-  color: #333;
-  font-size: 26px;
   line-height: 60px;
   border-radius: 50%;
+  margin: 0 auto 15px auto;
 }
-.project h4{
-  font-size: 26px;
-  text-transform: capitalize;
-  margin: 20px 0;
+
+/* Title and Paragraph */
+.project h4 {
+  font-size: 22px;
+  margin: 10px 0 15px;
 }
-.project p{
+.project p {
   text-align: justify;
+  font-size: 15px;
+  line-height: 1.6;
 }
-.project:hover{
-  border-color: #fed700;
+
+/* Container max-width (optional) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 
